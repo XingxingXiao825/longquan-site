@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>龙泉青瓷非遗文化展示</title>
+
+  <!-- 基本响应式设置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO 关键词与描述 -->
+  <meta name="description" content="通过多语言和多模态技术，展示龙泉青瓷的历史、技艺与国际影响。" />
+  <meta name="keywords" content="龙泉青瓷, Celadon, 非遗, Heritage, 瓷器, Longquan Celadon" />
+
+  <!-- Open Graph（社交媒体预览）-->
+  <meta property="og:title" content="龙泉青瓷非遗文化展示" />
+  <meta property="og:description" content="探索千年瓷韵与全球传播故事。" />
+  <meta property="og:image" content="https://your-domain.com/images/hero_celadon.jpg" />
+  <meta property="og:url" content="https://your-domain.com/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- 可选：Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="龙泉青瓷非遗文化展示" />
+  <meta name="twitter:description" content="通过多语言和多模态技术，展示龙泉青瓷的历史、技艺与国际影响。" />
+  <meta name="twitter:image" content="https://your-domain.com/images/hero_celadon.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/lang.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 data-zh="龙泉青瓷语音导览" data-en="Audio Guide for Longquan Celadon"></h1>
+    <nav>
+      <a href="index.html" data-zh="首页" data-en="Home"></a> |
+      <a href="history.html" data-zh="历史文化" data-en="History"></a> |
+      <a href="technique.html" data-zh="烧制技艺" data-en="Technique"></a> |
+      <a href="gallery.html" data-zh="代表作品" data-en="Gallery"></a> |
+      <a href="audio.html" data-zh="语音导览" data-en="Audio Guide"></a> |
+      <a href="international.html" data-zh="国际传播" data-en="Global Reach"></a> |
+      <a href="faq.html" data-zh="常见问题" data-en="FAQ"></a> |
+      <a href="about.html" data-zh="关于我们" data-en="About Us"></a>
+    </nav>
+    <div class="lang-buttons">
+      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p data-zh="欢迎使用龙泉青瓷语音导览，通过声音感受瓷器背后的文化脉络与匠心传承。"
+         data-en="Welcome to the Longquan Celadon audio guide. Discover the cultural heritage and craftsmanship behind the porcelain through immersive audio."></p>
+    </section>
+
+    <section class="guide-section">
+      <h2 data-zh="🎧 中文导览" data-en="🎧 Chinese Guide"></h2>
+      <p data-zh="点击下方播放按钮，开始聆听中文解说。" 
+         data-en="Click the play button below to listen to the Chinese narration."></p>
+      <audio controls>
+        <source src="audio/longquan_guide_cn.mp3" type="audio/mpeg" />
+        <span data-zh="您的浏览器不支持音频播放。" data-en="Your browser does not support audio playback."></span>
+      </audio>
+    </section>
+
+    <section class="guide-section">
+      <h2 data-zh="🎧 英文导览" data-en="🎧 English Guide"></h2>
+      <p data-zh="点击下方播放按钮，开始聆听英文解说。" 
+         data-en="Click the play button below to listen to the English narration."></p>
+      <audio controls>
+        <source src="audio/longquan_guide_en.mp3" type="audio/mpeg" />
+        <span data-zh="您的浏览器不支持音频播放。" data-en="Your browser does not support audio playback."></span>
+      </audio>
+    </section>
+  </main>
+</body>
+</html>

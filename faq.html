@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>常见问题</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/lang.js" defer></script>
+  <script>
+    // FAQ 手风琴交互脚本 （也可放入独立的 faq.js 并引入）
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+          const answer = q.nextElementSibling;
+          // 收起所有
+          document.querySelectorAll('.faq-answer').forEach(a => {
+            if (a !== answer) a.style.maxHeight = null;
+          });
+          // 切换当前
+          if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            q.classList.remove('active');
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            q.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1 data-zh="常见问题" data-en="FAQ"></h1>
+    <nav>
+      <a href="index.html" data-zh="首页" data-en="Home"></a> |
+      <a href="history.html" data-zh="历史文化" data-en="History"></a> |
+      <a href="technique.html" data-zh="烧制技艺" data-en="Technique"></a> |
+      <a href="gallery.html" data-zh="代表作品" data-en="Gallery"></a> |
+      <a href="audio.html" data-zh="语音导览" data-en="Audio Guide"></a> |
+      <a href="international.html" data-zh="国际传播" data-en="Global Reach"></a> |
+      <a href="faq.html" data-zh="常见问题" data-en="FAQ"></a> |
+      <a href="about.html" data-zh="关于我们" data-en="About Us"></a>
+    </nav>
+    <div class="lang-buttons">
+      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="faq">
+
+      <div class="faq-item">
+        <h2 class="faq-question" data-zh="龙泉青瓷与景德镇瓷器有何不同？" data-en="What’s the difference between Longquan and Jingdezhen porcelain?"></h2>
+        <p class="faq-answer" data-zh="龙泉青瓷以厚釉、温润、青绿为特点，釉面多呈现出晶莹剔透的粉青、梅子青等色彩，质感如玉，器型端庄稳重。景德镇瓷器则以胎质细腻、白度极高的白瓷著称，并且在彩绘装饰方面极为丰富多彩，各具风格。两者代表了中国陶瓷两大地域传统的不同美学追求。" 
+           data-en="Longquan Celadon is characterized by its thick glaze, warm jade-like texture, and colors like powder-green and plum-green, with elegant sturdy forms. Jingdezhen porcelain is renowned for its fine, pure white body and richly varied painted decorations. Each represents distinct regional aesthetic traditions in Chinese ceramics."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="为什么龙泉青瓷能作为外交礼物？" data-en="Why is Longquan Celadon used in diplomacy?"></h2>
+      <p class="faq-answer" data-zh="龙泉青瓷历史悠久，工艺精湛，且承载丰富的文化内涵，象征着中国传统美学与和平友好的精神。其温润如玉的釉色和典雅的造型适合展示中国文化软实力，因而常被用作国家间赠礼，促进文化交流与友谊。"
+         data-en="With a long history, exquisite craftsmanship, and rich cultural significance, Longquan Celadon symbolizes traditional Chinese aesthetics and the spirit of peace and friendship. Its jade-like glaze and elegant forms showcase China’s cultural soft power, making it a favored diplomatic gift to promote cultural exchange and friendship."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷还能用来喝茶吗？" data-en="Can Longquan Celadon still be used for tea today?"></h2>
+      <p class="faq-answer" data-zh="现代龙泉青瓷采用高温烧制技术，确保瓷器无害且坚固耐用。其釉面光滑，不吸味，不易滋生细菌，完全适合日常饮茶和饮水使用，兼具实用性和审美价值，是传统工艺与现代生活的完美结合。"
+         data-en="Modern Longquan Celadon is produced using high-temperature firing techniques to ensure safety, durability, and smooth glaze surfaces that resist odors and bacterial growth. It is fully suitable for daily tea and water use, combining practicality with aesthetic value—a perfect fusion of tradition and modern life."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷的制作工艺有哪些独特之处？" data-en="What are the unique aspects of Longquan Celadon craftsmanship?"></h2>
+      <p class="faq-answer" data-zh="龙泉青瓷的制作包括选泥、成型、施釉和高温烧制四大步骤。其泥料细腻，釉料含铁量适中，烧成后的青绿釉色晶莹剔透，且具有‘釉里红’现象。窑变效应使每件作品独一无二，体现了匠人对火候与釉药配比的精准把控。"
+         data-en="Longquan Celadon production involves four major steps: clay selection, forming, glazing, and high-temperature firing. The clay is fine, and the glaze contains moderate iron content, resulting in translucent greenish glazes with the distinctive 'inside red' effect. Kiln variations make each piece unique, showcasing the artisans’ precise control over firing temperature and glaze composition."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷在国际市场的收藏价值如何？" data-en="What is the collecting value of Longquan Celadon in the international market?"></h2>
+      <p class="faq-answer" data-zh="龙泉青瓷因其稀缺性、历史文化价值和艺术魅力，深受全球收藏家青睐。拍卖市场中，南宋时期的青瓷尤为抢手，价格屡创新高。其作为中国古代陶瓷代表，收藏不仅具有经济价值，更具学术与文化意义。"
+         data-en="Longquan Celadon is highly valued by global collectors due to its rarity, historical and cultural significance, and artistic appeal. Southern Song celadon pieces are especially sought-after in auctions, often fetching record prices. As a representative of ancient Chinese ceramics, collecting Longquan Celadon holds both economic and scholarly importance."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷的釉色是如何形成的？" data-en="How are the glaze colors of Longquan Celadon formed?"></h2>
+      <p class="faq-answer" data-zh="龙泉青瓷的釉色主要来源于釉料中铁元素的还原反应。通过在还原气氛中高温烧制，铁离子呈现出青绿色调。不同的温度、气氛和配方调整，产生粉青、梅子青、豆青等多样色泽，赋予青瓷丰富的视觉层次。"
+         data-en="The glaze colors of Longquan Celadon mainly result from the reduction reaction of iron elements in the glaze. High-temperature firing in a reducing atmosphere causes iron ions to appear in blue-green hues. Variations in temperature, atmosphere, and glaze formula produce diverse colors like powder-green, plum-green, and pea-green, giving celadon rich visual layers."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷的主要产区在哪里？" data-en="Where are the main production areas of Longquan Celadon?"></h2>
+      <p class="faq-answer" data-zh="龙泉青瓷的核心产区位于浙江省龙泉市及其周边地区，包含青田、缙云等地。该地区丰富的优质陶瓷原料和独特的烧造技术为青瓷的发展提供了得天独厚的条件，成为中国青瓷的重要代表。"
+         data-en="The main production areas of Longquan Celadon are located in Longquan City, Zhejiang Province, and its surrounding regions including Qingtian and Jinyun. The abundant high-quality raw materials and unique firing techniques here provide ideal conditions for celadon development, making it a key representative of Chinese celadon."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="龙泉青瓷的传统装饰手法有哪些？" data-en="What traditional decoration techniques are used in Longquan Celadon?"></h2>
+      <p class="faq-answer" data-zh="传统龙泉青瓷装饰多以刻花、印花和堆塑为主，纹饰多为莲花、云纹、龙凤等吉祥图案，寓意吉庆安康。这些细腻的装饰通过釉色的渗透与熔合，表现出朦胧而典雅的艺术效果。"
+         data-en="Traditional decoration techniques of Longquan Celadon mainly include incising, stamping, and appliqué. Common motifs such as lotus, clouds, dragons, and phoenixes symbolize auspiciousness and well-being. These delicate decorations blend with the glaze, producing a soft and elegant artistic effect."></p>
+      </div>
+
+      <div class="faq-item">
+      <h2 class="faq-question" data-zh="如何辨别真伪龙泉青瓷？" data-en="How to distinguish authentic Longquan Celadon?"></h2>
+      <p class="faq-answer" data-zh="辨别真伪主要看釉色、质地和制作工艺。正宗龙泉青瓷釉色温润，质地细腻且厚重，胎体坚硬，且常带有特有的‘釉里红’现象。伪品则釉色偏暗、质感生硬、造型粗糙。此外，鉴定还需参考烧制年代、窑口特征及考古发掘资料。"
+         data-en="Authenticity is judged by glaze color, texture, and craftsmanship. Genuine Longquan Celadon has warm, fine, and thick glaze with a hard body and often features the unique 'inside red' effect. Fakes tend to have dull glaze, coarse texture, and rough shapes. Identification also considers firing period, kiln marks, and archaeological findings."></p>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

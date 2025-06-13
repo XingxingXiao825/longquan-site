@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>龙泉青瓷非遗文化展示</title>
+
+  <!-- 基本响应式设置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO 关键词与描述 -->
+  <meta name="description" content="通过多语言和多模态技术，展示龙泉青瓷的历史、技艺与国际影响。" />
+  <meta name="keywords" content="龙泉青瓷, Celadon, 非遗, Heritage, 瓷器, Longquan Celadon" />
+
+  <!-- Open Graph（社交媒体预览）-->
+  <meta property="og:title" content="龙泉青瓷非遗文化展示" />
+  <meta property="og:description" content="探索千年瓷韵与全球传播故事。" />
+  <meta property="og:image" content="https://your-domain.com/images/hero_celadon.jpg" />
+  <meta property="og:url" content="https://your-domain.com/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- 可选：Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="龙泉青瓷非遗文化展示" />
+  <meta name="twitter:description" content="通过多语言和多模态技术，展示龙泉青瓷的历史、技艺与国际影响。" />
+  <meta name="twitter:image" content="https://your-domain.com/images/hero_celadon.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/lang.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 data-zh="龙泉青瓷烧制技艺" data-en="Longquan Celadon Firing Technique"></h1>
+    <nav>
+      <a href="index.html" data-zh="首页" data-en="Home"></a> |
+      <a href="history.html" data-zh="历史文化" data-en="History"></a> |
+      <a href="technique.html" data-zh="烧制技艺" data-en="Technique"></a> |
+      <a href="gallery.html" data-zh="代表作品" data-en="Gallery"></a> |
+      <a href="audio.html" data-zh="语音导览" data-en="Audio Guide"></a> |
+      <a href="international.html" data-zh="国际传播" data-en="Global Reach"></a> |
+      <a href="faq.html" data-zh="常见问题" data-en="FAQ"></a> |
+      <a href="about.html" data-zh="关于我们" data-en="About Us"></a>
+    </nav>
+    <div class="lang-buttons">
+      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 介绍区块 -->
+    <section class="intro">
+      <p data-zh="龙泉青瓷的烧制工艺始于北宋，成熟于南宋，工艺流程繁复，讲究火候与釉色的自然交融。" 
+         data-en="The firing technique of Longquan Celadon began in the Northern Song Dynasty and flourished during the Southern Song. It is a meticulous process emphasizing kiln temperature and the natural fusion of glaze and clay."></p>
+      <blockquote data-zh="“炉火纯青，青如碧，薄如蝉翼，声如磬。”" 
+                  data-en="‘A kiln of perfection – green as jade, thin as cicada wings, resonant as chime.’"></blockquote>
+    </section>
+
+    <!-- 工艺流程 -->
+    <section class="features">
+      <h2 data-zh="主要烧制步骤" data-en="Main Firing Steps"></h2>
+      <ul>
+        <li data-zh="选土：采用富含铁质的优质瓷土，为釉色提供基础。" 
+            data-en="Clay Selection: Rich iron-content clay forms the base for the glaze."></li>
+        <li data-zh="制坯：手工拉坯成型，确保器型端庄对称。" 
+            data-en="Shaping: Hand-thrown techniques ensure balanced and elegant forms."></li>
+        <li data-zh="素烧：初步入窑以900°C素烧，使其坚固但易上釉。" 
+            data-en="Bisque Firing: Initial firing at 900°C for strength and glaze absorption."></li>
+        <li data-zh="施釉：浸釉或泼釉，形成厚润如玉的釉层。" 
+            data-en="Glazing: Dipping or pouring creates a thick, jade-like surface."></li>
+        <li data-zh="烧成：在1300°C高温下还原焰烧制，呈现翡翠般的青绿色。" 
+            data-en="Glaze Firing: Final reduction firing at 1300°C creates the signature green hue."></li>
+      </ul>
+    </section>
+
+    <!-- 图片展示 -->
+    <section class="gallery">
+      <h2 data-zh="技艺掠影" data-en="Craft in Images"></h2>
+      <img src="images/technique_step1.jpg" alt="制作陶胚" />
+      <img src="images/technique_step2.jpg" alt="浸釉过程" />
+      <img src="images/technique_step3.jpg" alt="入窑烧制" />
+    </section>
+  <!-- 新增的视频展示区 -->
+  <section class="video-section">
+    <h2 data-zh="烧制技艺介绍视频" data-en="Firing Technique Introduction Video"></h2>
+    <video controls>
+      <source src="media/technique_intro.mp4" type="video/mp4" />
+      <p data-zh="您的浏览器不支持播放视频。" data-en="Your browser does not support video playback."></p>
+    </video>
+
+    <h2 data-zh="完整制作过程视频" data-en="Full Making Process Video"></h2>
+    <video class="vertical-video" controls>
+      <source src="media/full_process.mp4" type="video/mp4" />
+      <p data-zh="您的浏览器不支持播放视频。" data-en="Your browser does not support video playback."></p>
+    </video>
+  </section>
+
+  </main>
+</body>
+</html>
