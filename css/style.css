@@ -234,22 +234,27 @@ audio {
   height: 100%;
 }
 
+/* 竖屏视频嵌入容器 */
 .video-container-vertical {
   position: relative;
-  margin: 0 auto; 
-  padding-bottom: 177.78%; /* 9:16 比例，高度/宽度 = 16/9 的倒数 */
-  padding-top: 30px; 
+  /* 16:9 宽屏是 56.25%，竖屏 9:16 则为 177.78% */
+  padding-bottom: 177.78%;
   height: 0;
   overflow: hidden;
+  margin: 1rem auto;
+  max-width: 360px; /* 可根据页面布局调整最大宽度 */
 }
 
+/* 使 iframe 在容器内撑满高度并水平居中 */
 .video-container-vertical iframe {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: auto;
   height: 100%;
+  transform: translateX(-50%);
 }
+
 
 @media (max-width: 480px) {
   .video-container-vertical {
