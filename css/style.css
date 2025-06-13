@@ -235,8 +235,10 @@ audio {
 }
 .video-container-vertical {
   position: relative;
-  padding-bottom: 177.78%; /* 9:16 比例，高度/宽度 = 16/9 的倒数 */
-  padding-top: 30px; 
+  width: 100%;
+  max-width: 400px;  /* 控制最大宽度，例如400px，你可改成500或600试试 */
+  margin: 0 auto;    /* 居中显示 */
+  padding-bottom: 177.78%; /* 保持 9:16 比例 */
   height: 0;
   overflow: hidden;
 }
@@ -248,6 +250,7 @@ audio {
   width: 100%;
   height: 100%;
 }
+
 
 }
 /* FAQ 手风琴样式 */
