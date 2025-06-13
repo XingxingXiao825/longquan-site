@@ -252,6 +252,21 @@ audio {
   margin: 0 auto;
   border-radius: 8px;
 }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 }
 /* FAQ 手风琴样式 */
