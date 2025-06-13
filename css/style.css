@@ -237,7 +237,7 @@ audio {
   position: relative;
   width: 100%;
   max-width: 400px;  /* 控制最大宽度，例如400px，你可改成500或600试试 */
-  max-height: 500px
+  max-height: 400px
   margin: 0 auto;    /* 居中显示 */
   padding-bottom: 177.78%; /* 保持 9:16 比例 */
   height: 0;
