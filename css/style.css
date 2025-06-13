@@ -256,11 +256,7 @@ audio {
 }
 
 
-@media (max-width: 480px) {
-  .video-container-vertical {
-    max-width: 90%;
-  }
-}
+
 
 }
 /* FAQ 手风琴样式 */
