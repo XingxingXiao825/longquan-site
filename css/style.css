@@ -1,0 +1,289 @@
+body {
+  font-family: "KaiTi", "SimSun", serif;
+  background-color: #f9f7f3;
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #d3c9b1;
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 2px solid #a29c85;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "KaiTi", "SimSun", serif;
+  color: #3a3a3a;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3a3a3a;
+  border-bottom: 2px solid #a29c85;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  font-family: "KaiTi", "SimSun", serif;
+}
+
+nav {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a403a;
+  margin: 0 0.5rem;
+  font-family: "KaiTi", "SimSun", serif;
+}
+
+nav a:hover {
+  color: #7c6e58;
+}
+
+.lang-buttons {
+  margin-top: 1rem;
+}
+
+.lang-buttons button {
+  background-color: #7c6e58;
+  border: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  margin: 0 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: "KaiTi", "SimSun", serif;
+}
+
+.lang-buttons button:hover {
+  background-color: #a6997e;
+}
+
+main {
+  margin: 2rem auto;
+  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: "KaiTi", "SimSun", serif;
+}
+
+/* 优化 1: 诗句引用样式 */
+blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6b5e4f;
+  border-left: 4px solid #a29c85;
+  padding-left: 1rem;
+  margin: 2rem auto;
+  max-width: 80%;
+  font-family: "KaiTi", serif;
+}
+
+/* 优化 2: 首页大图样式 */
+.hero img {
+  width: 50%;
+  max-width: 400px;
+  max-height: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+/* 优化 3: 特色内容列表样式 */
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.2rem;
+  color: #4a403a;
+}
+
+.features li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #7c6e58;
+}
+
+/* 优化 4: intro 和 features 容器卡片风格 */
+.intro, .features {
+  background-color: #fffdf7;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(162, 156, 133, 0.2);
+}
+
+/* 优化 5: 移动端适配 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .lang-buttons button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
+
+  blockquote {
+    font-size: 1.1rem;
+  }
+}
+
+/* 优化 6: 通用图片样式 */
+img {
+  margin-top: 1rem;
+  border: 2px solid #d3c9b1;
+  border-radius: 5px;
+}
+
+/* 优化 7: 图库图片样式 */
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  object-fit: cover;
+  margin: 1rem;
+  border: 2px solid #d3c9b1;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 优化 8: 语音导览部分样式 */
+.guide-section {
+  background-color: #fffdf7;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(162, 156, 133, 0.2);
+  text-align: center;
+}
+
+.guide-section h2 {
+  font-size: 1.6rem;
+  color: #3e3e3e;
+  margin-bottom: 0.5rem;
+}
+
+.guide-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #4a403a;
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+}
+.section-nav {
+  background: #f2efe6;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #a29c85;
+  font-size: 1rem;
+}
+
+.section-nav a {
+  color: #4a403a;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.section-nav a:hover {
+  text-decoration: underline;
+}
+.video-section {
+  margin-top: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: #f8f6f0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.video-section h2 {
+  font-size: 1.6rem;
+  color: #2f2f2f;
+  margin-bottom: 1.2rem;
+  font-family: "KaiTi", "SimSun", serif;
+  letter-spacing: 1px;
+}
+
+/* 视频适配横屏 */
+.video-section video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 如果 intro_video 是竖屏视频，建议添加此类 */
+.vertical-video {
+  width: auto;
+  height: 480px;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+}
+/* FAQ 手风琴样式 */
+.faq-item + .faq-item {
+  margin-top: 0.5rem;
+}
+
+.faq-question {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.faq-question.active {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+
+.faq-question:hover {
+  background: #e8e8e8;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem;
+  border-left: 2px solid #a29c85;
+  background: #fffdf7;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 0.5rem;
+}
